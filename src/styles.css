@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body{
+  padding : 50px;
+}
+
+@media only screen and (max-width: 540px) {
+  body {
+    padding: 7px;
+  }
+}

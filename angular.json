@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "helloNg10"
+    }
+  },
+  "defaultProject": "helloNg10",
+  "cli": {
+    "analytics": "10accc60-51a0-4b6a-9838-fb94b316a51d"
+  }
 }

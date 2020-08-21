@@ -1,0 +1,23 @@
+<form #feedbackForm="ngForm" (submit)="onSubmit(feedbackForm.value)">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Username</label>
+    <input ngModel name="username" type="email" class="form-control" id="exampleInputEmail1"
+      aria-describedby="emailHelp" placeholder="Enter email" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Feedback</label>
+    <input ngModel name="feedback" type="text" class="form-control" id="Feedback" placeholder="Feedback" required>
+  </div>
+  <div class="text-center">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+
+<br>
+
+<div>
+  <p>All Feedbacks</p>
+  <ul>
+    <li *ngFor="let item of mDataArray">{{item.username}} : <span style="color:gray">{{item.feedback}}</span> </li>
+  </ul>
+</div>
