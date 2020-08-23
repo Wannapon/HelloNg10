@@ -6,11 +6,13 @@ import { FormsModule } from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FeedbackAlertComponent } from './feedback-alert/feedback-alert.component';
+import { ClickCountComponent } from './click-count/click-count.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FeedbackAlertComponent,
+    ClickCountComponent,
   ],
   imports: [
     BrowserModule,

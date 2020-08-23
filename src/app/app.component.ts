@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 
 export class AppComponent implements OnInit {
   title = 'helloNg10';
-  
+
   constructor(private http: HttpClient) {
   }
 

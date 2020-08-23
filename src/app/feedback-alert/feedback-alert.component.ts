@@ -13,7 +13,6 @@ export class FeedbackAlertComponent implements OnInit {
   mDataArray: any[] = []
 
   constructor(private http: HttpClient) {
-
   }
 
   getFeedback() {
@@ -31,7 +30,7 @@ export class FeedbackAlertComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getFeedback
+    this.getFeedback()
   }
 
 }
