@@ -13,12 +13,19 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient) {
   }
 
+  readData(value) {
+    const regex = /[0-9]/g
+    const newString = value.replace(regex, '')
+
+    console.log(`Fullname : ${newString}`)
+    if (newString == '') {
+      alert('Please enter Charector Only !!!')
+    } else {
+      alert(`Fullname : ${newString}`)
+    }
+  }
+
   ngOnInit(): void {
-    // throw new Error("Method not implemented.");
-    // let data = { username: 'Wannapon', feedback: "I love it" }
-    // this.http.post<any>('http://localhost:3000/api', data).subscribe(result => {
-    //   alert(JSON.stringify(result))
-    // })
   }
 
 }

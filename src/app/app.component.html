@@ -604,17 +604,27 @@
 <hr>
 <br>
 
-<input type="text" class="form-control" value="" placeholder="Enter your fullname">
-
-<br>
-
 <div class="row">
-<!-- feedback alert -->
-<div class="col-lg-6 col-sm-12">
-  <app-feedback-alert></app-feedback-alert>
-</div>
-<!-- click count -->
-<div class="col-lg-6 col-sm-12">
-  <app-click-count></app-click-count>
-</div>
+    <!-- feedback alert by element-->
+    <div class="col-lg-6 col-sm-12">
+      <app-feedback-alert></app-feedback-alert>
+    </div>
+  <!-- click count by class-->
+  <div class="col-lg-6 col-sm-12">
+    <app-click-count></app-click-count>
+  </div>
+  <!-- null -->
+  <div class="col-lg-6 col-sm-12">
+  </div>
+    <!-- log fullname -->
+    <div class="col-lg-6 col-sm-12">
+      <p>log fullname</p>
+      <form class="text-center">
+        <input #fullname type="text" class="form-control" placeholder="Enter your fullname">
+        <input type="text" name="creditcard" id="creditcard_number" 
+    placeholder="000" maxlength="3" 
+    inputmode="numeric" pattern="[0-9]*" digitOnly>
+        <button type="submit" class="btn btn-primary" (click)="readData(fullname.value)">Submit</button>
+      </form>
+    </div>
 </div>
